@@ -12,7 +12,11 @@ public class LambdaCafeteria {
     Snack s3 = new Snack("Pretzel", 30, 2.00, v1.getId());
     Snack s4 = new Snack("Soda", 24, 2.50, v2.getId());
     Snack s5 = new Snack("Water", 20, 2.75, v2.getId());
-
+    c1.buySnack(s4.totalCost(4));
+    s4.buySnack(4);
+    System.out.println("***Customer 1 buys 4 of Snack 4");
+    System.out.println(
+        c1.getName() + " has $" + c1.getCash() + " and " + s4.getName() + " has " + s4.getQuantity() + " remaining.");
   }
 
   public static void main(String[] arg) {
