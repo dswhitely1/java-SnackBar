@@ -33,10 +33,6 @@ public class Snack {
     return quantity;
   }
 
-  public void setQuanitiy(int quantity) {
-    this.quantity = quantity;
-  }
-
   public double getCost() {
     return cost;
   }
@@ -51,5 +47,17 @@ public class Snack {
 
   public void setVendingMachineId(int vending_machine_id) {
     this.vending_machine_id = vending_machine_id;
+  }
+
+  public void addQuantity(int amount) {
+    this.quantity += amount;
+  }
+
+  public void buySnack(int amount) {
+    this.quantity -= amount;
+  }
+
+  public double totalCost(int quanity) {
+    return this.cost * quanity;
   }
 }
