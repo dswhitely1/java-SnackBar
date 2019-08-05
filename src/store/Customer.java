@@ -32,4 +32,12 @@ public class Customer {
 	public void setCash(double cash) {
 		this.cash = cash;
 	}
+
+	public void addCash(double cash) {
+		this.cash += cash;
+	}
+
+	public void buySnack(double cash) {
+		this.cash -= cash;
+	}
 }
