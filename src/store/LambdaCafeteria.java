@@ -37,7 +37,7 @@ public class LambdaCafeteria {
         c1.getName() + " has $" + c1.getCash() + " and " + s2.getName() + " has " + s2.getQuantity() + " remaining.");
     s3.addQuantity(12);
     System.out.println("*** Add 12 to Snack 3 ***");
-    System.out.println("Added 12 " + s3.getName() + " to the machine.");
+    System.out.println("Added 12 " + s3.getName() + " to the machine.  The new quantity is " + s3.getQuantity() + ".");
     c2.buySnack(s3.totalCost(3));
     s3.buySnack(3);
     System.out.println("*** Customer 2 buys 3 of Snack 3 ***");
